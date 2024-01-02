@@ -1,0 +1,419 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP8HhITv33ucBUJYSRf5Z09",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ctrl248/aipython/blob/main/20240102\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-6 하나의 변수를 활용하는 코드입니다.\n",
+        "Lab = 105\n",
+        "print(\"우리가 수업하는 실습실:\")\n",
+        "print(Lab)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "m2TYQ75TB5yW",
+        "outputId": "6905ecb9-8f37-47ae-ef15-642c52fe9297"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "우리가 수업하는 실습실:\n",
+            "105\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-7 하나의 변수를 활용하는 코드입니다.\n",
+        "Lab = 105\n",
+        "print(\"우리가 수업하는 실습실:\", Lab)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PwHb1ygHCJUV",
+        "outputId": "d231511e-05d8-4826-955d-a5024007b01a"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "우리가 수업하는 실습실: 105\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-8\n",
+        "# 변수 두 개를 생성하고 값을 할당\n",
+        "my_id = 202065140\n",
+        "grade = 1\n",
+        "\n",
+        "# 두 개의 변수에 할당된 값을 출력\n",
+        "print(\"나의 학번: \")\n",
+        "print(my_id)\n",
+        "print(\"학년: \")\n",
+        "print(grade)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uzM74YNGCRrd",
+        "outputId": "09ba908c-70ee-4010-91be-016b0fc526d8"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "나의 학번: \n",
+            "202065140\n",
+            "학년: \n",
+            "1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-9\n",
+        "# 변수에 값을 할당하고 출력하는 예제입니다.\n",
+        "# dollars 변수에 값을 할당해봅시다.\n",
+        "dollars = 2.75\n",
+        "print(\"I have\", dollars, \"in my account.\")\n",
+        "\n",
+        "# dollars 변수에 새로운 값을 할당해봅시다.\n",
+        "dollars = 99.95\n",
+        "print(\"But now I have\", dollars, \"in my account!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NKs7M0E4CsL2",
+        "outputId": "94b23bd5-9735-4b17-ee72-dfefc30402fe"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I have 2.75 in my account.\n",
+            "But now I have 99.95 in my account!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-10\n",
+        "# 두 개의 변수를 생성하고 문자열을 할당합니다.\n",
+        "department = \"국어국문학과\"\n",
+        "name = \"홍길동\"\n",
+        "\n",
+        "# 각 변수에 할당된 문자열 값을 출력해보자.\n",
+        "print(department, name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "730UD2B9DMW-",
+        "outputId": "0899c80e-a9df-4cd0-fd53-e578412e1c28"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "국어국문학과 홍길동\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-11\n",
+        "# 학과명을 입력받습니다.\n",
+        "department = input(\"학과명: \")\n",
+        "\n",
+        "# 여러분의 이름을 입력받습니다.\n",
+        "name = input(\"성명: \")\n",
+        "\n",
+        "# 두 변수의 값을 출력합니다.\n",
+        "print(\"안녕하세요\", department, name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7MouDBc5Da-i",
+        "outputId": "a3d4692f-0a5c-4dd9-d68e-a926ed42aa64"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "학과명: 음악학과\n",
+            "성명: 이필립\n",
+            "안녕하세요 음악학과 이필립\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-12\n",
+        "# 여러분의 이름, 나이, 통학시간, 정보를 입력받습니다.\n",
+        "name = input(\"당신의 이름은 무엇입니까? \")\n",
+        "age = int(input(\"나이는 어떻게 되시나요? \"))\n",
+        "attending_time = float(input(\"통학시간은 얼마나 걸립니까? \"))\n",
+        "\n",
+        "# 변수에 입력된 데이터를 출력해봅시다.\n",
+        "print(\"입력 정보는 다음과 같습니다.\")\n",
+        "print(\"이름:\", name)\n",
+        "print(\"나이:\", age)\n",
+        "print(\"통학시간:\", attending_time)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A3D37lNMD5Jm",
+        "outputId": "55827a88-a564-49d6-c647-51e88a3a7a8c"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "당신의 이름은 무엇입니까? 이필립\n",
+            "나이는 어떻게 되시나요? 256\n",
+            "통학시간은 얼마나 걸립니까? 0.5\n",
+            "입력 정보는 다음과 같습니다.\n",
+            "이름: 이필립\n",
+            "나이: 256\n",
+            "통학시간: 0.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-13\n",
+        "# salary 변수에 급여를 할당합니다.\n",
+        "salary = 2500.0\n",
+        "\n",
+        "# bonus 변수에 보너스를 할당합니다.\n",
+        "bonus = 1200.0\n",
+        "\n",
+        "# 급여와 보너스를 더하여 총 급여를 구해봅니다.\n",
+        "# 총 급여를 pay 변수에 할당합니다.\n",
+        "pay = salary + bonus\n",
+        "\n",
+        "# 총 급여를 출력합니다.\n",
+        "print(\"총 급여: \", pay)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q5VwSIauEmtH",
+        "outputId": "3cc431fd-4d50-4ff4-f74e-19f9b7749dc7"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "총 급여:  3700.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-14\n",
+        "# 본 예제에서는 원가에 할인율을 적용하여 할인가격을 계산해보자\n",
+        "\n",
+        "# original price 변수에 원가를 입력받는다.\n",
+        "original_price = float(input(\"제품의 원가를 입력해주세요: \"))\n",
+        "\n",
+        "# 원가에 할인율 20%를 적용하여 할인가를 계산하여 discount 변수에 할당합다.\n",
+        "discount = original_price * 0.2\n",
+        "\n",
+        "# 원가에 할인가가 적용된 제품 가격을 계산하여 sale_price 변수에 할당한다.\n",
+        "sale_price = original_price - discount\n",
+        "\n",
+        "# 할인가가 적용된 제품 가격을 풀력한다.\n",
+        "print(\"할인가격: \", sale_price)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WIwU_o7zE9um",
+        "outputId": "d86cad00-36b2-44e2-a9ed-3737d8d817f7"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "제품의 원가를 입력해주세요: 1000\n",
+            "할인가격:  800.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-15\n",
+        "# 세 과목의 평가 점수를 입력받고\n",
+        "# test1, test2, test3 변수에 각각 할당한다.\n",
+        "test1 = float(input(\"첫 번째 과목 점수를 입력해주세요: \"))\n",
+        "test2 = float(input(\"두 번째 과목 점수를 입력해주세요: \"))\n",
+        "test3 = float(input(\"세 번째 과목 점수를 입력해주세요: \"))\n",
+        "\n",
+        "# 각 과목의 점수 평균을 계산하고\n",
+        "# 그 결과 값을 average 변수에 할당한다.\n",
+        "average = (test1 + test2 + test3) / 3.0\n",
+        "\n",
+        "#점수 평균을 출력한다.\n",
+        "print(\"3 과목의 평균 점수: \", average)"
+      ],
+      "metadata": {
+        "id": "RmGXeSutFgY3"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-16\n",
+        "# 본 예제는 초를 입력받아 시, 분, 초로 변환하는 프로그램이다.\n",
+        "# 초 값을 입력받아 total_seconds 변수에 할당한다.\n",
+        "total_seconds = float(input(\"시간 값을 초 단위로 입력해주세요: \"))\n",
+        "\n",
+        "# 시간을 계산하여 hours 변수에 할당한다.\n",
+        "hours = total_seconds // 3600\n",
+        "\n",
+        "# 분을 계산하여 minutes 변수에 할당한다.\n",
+        "minutes = (total-seconds // 60) % 60\n",
+        "\n",
+        "# 초의 나머지 값을 seconds 변수에 할당한다.\n",
+        "seconds = total-seconds % 60\n",
+        "\n",
+        "# 시, 분, 초 값을 출력한다.\n",
+        "print(\"시 분 초는 다음과 같습니다.\")\n",
+        "print(\"시: \", hours)\n",
+        "print(\"분: \", minutes)\n",
+        "print(\"초: \", seconds)"
+      ],
+      "metadata": {
+        "id": "qUrTaNIAGQmu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program 2-17\n",
+        "future_value = float(input(\"목표 금액을 입력해주세요: \"))\n",
+        "rate = float(input(\"연간 이율을 입력해주세요: \"))\n",
+        "years = int(input(\"저축 기간을 연 단위로 입력해주세요: \"))\n",
+        "present_value = future_value / (1.0 + rate)**years\n",
+        "print(\"적립 금액: \", present_value)"
+      ],
+      "metadata": {
+        "id": "iO9yfgBGHbjr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"a\",\"b\",\"c\")\n",
+        "print(\"a\",\"b\",\"c\"sep=\")\n",
+        "print(\"a\",\"b\",\"c\",sep=\"***\")"
+      ],
+      "metadata": {
+        "id": "AO5bPMKJINYN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"a\")\n",
+        "print(\"b\")\n",
+        "print(\"c\", end=\")\n",
+        "print(\"d\", end=\")\n",
+        "print(\"e\", end=\"***\")\n",
+        "print(\"f\")"
+      ],
+      "metadata": {
+        "id": "0JhXbSyiIec2"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
