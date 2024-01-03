@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMJZI5S2JngzNLkouMsHPLF",
+      "authorship_tag": "ABX9TyP0EjbpGSsVDJa26AK0u1pd",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,22 +28,14 @@
     },
     {
       "cell_type": "code",
-      "source": [
-        "reversed_range = list(reversed(range(1, 10)))\n",
-        "\n",
-        "for r in reversed_range:\n",
-        "    for c in range(r - 1):\n",
-        "        print(\"*\", end=\"\")\n",
-        "    print()"
-      ],
+      "execution_count": 1,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "x3J92Y0yWTnL",
-        "outputId": "0f582a2a-4995-4949-8d0f-15b4a602d2eb"
+        "id": "FrBn5Ff2YTCZ",
+        "outputId": "ae5f92b5-4252-4498-dba2-5b422ee86bf9"
       },
-      "execution_count": 39,
       "outputs": [
         {
           "output_type": "stream",
@@ -60,185 +52,14 @@
             "\n"
           ]
         }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "for i in range(1, 10, 2):\n",
-        "    print(i)"
       ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "lrI0dQtkFFII",
-        "outputId": "84c87fd2-6843-4619-aa82-078e4919b723"
-      },
-      "execution_count": 10,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "1\n",
-            "3\n",
-            "5\n",
-            "7\n",
-            "9\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
       "source": [
-        "score = int(input(\"\"))\n",
-        "if score >= 90:\n",
-        "    print(\"A\")\n",
-        "elif score >= 80:\n",
-        "    print(\"B\")\n",
-        "elif score >= 70:\n",
-        "    print(\"C\")\n",
-        "elif score >= 60:\n",
-        "    print(\"D\")\n",
-        "else:\n",
-        "    print(\"F\")"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "BE44inov-7Xw",
-        "outputId": "337ddfab-ac2b-4fe6-ddf7-3534178b1198"
-      },
-      "execution_count": 8,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "100\n",
-            "A\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "a = [1, 2, 3, 4, 5]\n",
-        "for i in a:\n",
-        "    print(i, end=\" \")"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "_06_EL_tEd8Z",
-        "outputId": "6324d735-808b-425c-c199-05277ea8d469"
-      },
-      "execution_count": 9,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "1 2 3 4 5 "
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "V9UpuPfxWQQE"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "n = int(input(\"\"))\n",
-        "total_sum = 0\n",
+        "reversed_range = list(reversed(range(1, 10)))\n",
         "\n",
-        "for i in range(1, n + 1):\n",
-        "    total_sum += i\n",
-        "\n",
-        "print(total_sum)"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "g3bZb8iUFMPQ",
-        "outputId": "c5723d46-ac0a-4942-b323-8680e3d6c603"
-      },
-      "execution_count": 20,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "100\n",
-            "5050\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "A = int(input(\"\"))\n",
-        "B = int(input(\"\"))\n",
-        "C = int(input(\"\"))"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "DtAppJfDHGWJ",
-        "outputId": "02aaca77-0e33-4f3e-90fb-555e9662a31b"
-      },
-      "execution_count": 24,
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": [
-            "5\n",
-            "4\n",
-            "3\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "input_str = input(\"\")\n",
-        "A, B, C = map(int, input_str.split())\n",
-        "print(B)"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "uF-7QR_IMA-K",
-        "outputId": "1cc2b5e8-f550-4052-f648-ab8b527d5523"
-      },
-      "execution_count": 30,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "1 17 56\n",
-            "17\n"
-          ]
-        }
+        "for r in reversed_range:\n",
+        "    for c in range(r - 1):\n",
+        "        print(\"*\", end=\"\")\n",
+        "    print()"
       ]
     }
   ]
